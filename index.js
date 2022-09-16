@@ -87,8 +87,9 @@ const zooAnimals = [
   💡 NOTE: Do some research for other methods that can help help you
   */
 
-  function lowerCaseNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function lowerCaseNames(zooAnimals){
+   let newArray = zooAnimals.map((animal) => animal.animal_name.toLowerCase())
+   return newArray;
   }
   
   
