@@ -13,14 +13,17 @@ function myFunction() {
   }
   nestedFunction();
 }
-//myFunction();
+myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
 
+/*
 
+nestedFunction can access the variable internal because it is within is lexical environment. All scopes can access variables that 
+are in its outer scope. nestedFunction should also be able to access the external variable, because its in the global scope.
 
-
+*/
 /* 🚀🚀🚀 Task 2: Counter 🚀🚀🚀 */
 /* Use summation to do the following:
     1. Receive a number as an argument passed from a parameter
@@ -30,10 +33,17 @@ function myFunction() {
 💡 NOTE: you may use a for loop for this function if you wish 
 */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
+function summation(number) {
+  
+  let sum = 0;
 
+  for (let i=0; i <= number; i++) {
+    sum += i
   }
+
+  return sum
+
+}
  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
