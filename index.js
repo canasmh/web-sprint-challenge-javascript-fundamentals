@@ -88,7 +88,7 @@ const zooAnimals = [
   */
 
   function lowerCaseNames(zooAnimals){
-   let newArray = zooAnimals.map((animal) => animal.animal_name.toLowerCase())
+   const newArray = zooAnimals.map((animal) => animal.animal_name.toLowerCase())
    return newArray;
   }
   
@@ -101,8 +101,9 @@ const zooAnimals = [
   3. Return this new array
   */
 
-  function lowPopulationAnimals(/*Your Code Here*/){
-    /*Your Code Here*/
+  function lowPopulationAnimals(zooAnimals) {
+    const newArray = zooAnimals.filter((animal) => animal.population < 5);
+    return newArray;
   }
   
 
