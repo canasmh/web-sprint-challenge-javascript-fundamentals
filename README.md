@@ -26,13 +26,33 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
+Map, filter and reduce are array methods each of which serve a unique purpose. The map methord operates on an array, and returns an array that has the operations done to each item. I find it to be very similar to the forEach method, except the map method actually returns the array with the operated items.
+
+The filter method is great for filtering items. It would be the method to use when you have an array, and you want to create an array that only includes elements to meet a certain condition.
+
+The reduce method, unlike the map and filter methods reduces the array to a single number. This method is great for when you find things like the sum or average of an array. 
+
 2. Explain the difference between a callback and a higher order function.
+
+A higher order function is a function that receives a function as one of its parameters. A callback function is a function that is executed by a higher order function.
 
 3. Explain what a closure is.
 
+So this concept was a little hard for me to grasp, and I'm not sure I still fully understand it. But, for the sake of answer the question, closure is the ability for a scope, lets call it scope B, to reference and interact with the outer scope, lets call it scope A. Whether or not closure refers specifically to nested functions was unclear to me. If a block scope references and interacts with a variable/function from the global scope, is it still closure? 
+
 4. Describe the four principles of the 'this' keyword.
 
+The global/window binding which is what you get if you just logged the keyword 'this' from the global scope. It essentially just returns the window object
+
+The implicit binding is what happens, for example, in the constructor method. When you create an object, the 'this' keyword reference the object and binds it to the property to the right of the 'this' keyword.
+
+The explicit binding is what you get when you use the call/apply methods. It explicitly binds the 'this' keyword to the object passed as an argument.
+
+The new binding is used to instantiate objects. In this case, the 'new' keyword binds the 'this' keyword use in the object constructor method to the variable name used to instatiate an object. 
+
 5. Why do we need super() in an extended class?
+
+the super() method is needed because a child class NEEDS to be able to construct its parent class. If the parent class has any arguments, that become class attributes -- or if it just has any default attributes, you need to make sure that the child class instantiates these attributes as well. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
